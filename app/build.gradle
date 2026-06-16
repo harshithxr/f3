@@ -1,0 +1,21 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.2'
+}
+
+application {
+    mainClass = 'org.example.App'
+}
+
+tasks.register("display") {
+    doLast {
+        println "devops"
+    }
+}
